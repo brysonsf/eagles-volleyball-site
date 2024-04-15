@@ -1,3 +1,6 @@
+<script>
+	import Carousel from "../../Carousel.svelte";
+</script>
 <svelte:head>
 	<title>Programs</title>
 	<meta name="description" content="Programs Offered" />
@@ -5,8 +8,7 @@
 
 <div class="text-column">
 	<h1>Eagles Volleyball Programming</h1>
-
-	
+	<Carousel />
 	<p>
 		<a href="https://www.facebook.com/groups/1530371987469476" target="_blank" rel="noopener">Eagles Co-ed Volleyball Drop-In Facebook Page</a>
 	</p>

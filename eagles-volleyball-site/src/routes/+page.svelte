@@ -6,6 +6,7 @@
 <svelte:head>
 	<title>Eagles Volleyball</title>
 	<meta name="description" content="Eagles Volleyball" />
+	
 </svelte:head>
 
 <section>
