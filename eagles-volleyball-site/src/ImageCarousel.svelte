@@ -23,6 +23,9 @@
         description: "image5",
       },
     ];
+    /**
+     * @type {Carousel}
+     */
     let carousel; // for calling methods of the carousel instance
     const handleNextClick = () => {
       carousel.goToNext();

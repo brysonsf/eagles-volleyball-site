@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	import eagle from '$lib/images/eaglevball.jfif';
-	import github from '$lib/images/github.svg';
 </script>
 
 <header>
@@ -27,9 +26,6 @@
 			</li>
 			<li aria-current={$page.url.pathname === '/volunteer' ? 'page' : undefined}>
 				<a href="/volunteer">Volunteer</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/picures') ? 'page' : undefined}><!-- not yet implemented -->
-				<a href="/pictures">Pictures</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
