@@ -22,8 +22,14 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/programs' ? 'page' : undefined}>
+				<a href="/programs">Programs</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/volunteer' ? 'page' : undefined}>
+				<a href="/volunteer">Volunteer</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/picures') ? 'page' : undefined}><!-- not yet implemented -->
+				<a href="/pictures">Pictures</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,9 +38,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
+		<!-- can put another logo / link here -->
 	</div>
 </header>
 
