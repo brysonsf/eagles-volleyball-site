@@ -16,10 +16,14 @@
 		<a href="https://www.facebook.com/groups/2018190391899731" target="_blank" rel="noopener">Eaglets Youth Volleyball Training Facebook Page</a>
 	</p>
 	<p>
+		<a href="https://www.facebook.com/groups/651314643357907" target="_blank" rel="noopener">Bedford Blazing Eagles Facebook Page</a>
+	</p>
+	
+	<p>
 		Public Adult Intermediate and Advanced Drop Ins
 		<br>Eaglets 9-13 youth Training
-		<br>Youth 14U/15U Boys Competition Team 
-		<br>Youth 14U/15U Girls Competition Team 
+		<br>Bedford Blazing Eagles Boys Competition Team 
+		<br>Bedford Blazing Eagles Girls Competition Team 
 	</p>
 
 </div>

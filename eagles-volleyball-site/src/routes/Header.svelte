@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import eagle from '$lib/images/eaglevball.jfif';
+	import eagle from '$lib/images/eaglesvball.jpg';
 </script>
 
 <header>

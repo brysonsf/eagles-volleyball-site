@@ -1,5 +1,5 @@
 <footer>
-    <em>Developed by Bryson SF &copy;2024</em> for Eagles Volleyball Halifax
+    <em>Developed by Bryson SF &copy;2024</em> for <a href="https://www.facebook.com/groups/651314643357907" target="_blank" rel="noopener">Eagles Volleyball Halifax</a>
 </footer>
 <style>
     footer {
