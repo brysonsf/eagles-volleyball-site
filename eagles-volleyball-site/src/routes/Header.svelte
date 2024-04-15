@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import eagle from '$lib/images/eaglevball.jfif';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+			<img src={eagle} alt="Eagles Logo" />
 		</a>
 	</div>
 
@@ -45,8 +45,8 @@
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
+		width: 10em;
+		height: 10em;
 	}
 
 	.corner a {
@@ -58,8 +58,8 @@
 	}
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		width: 8em;
+		height: 8em;
 		object-fit: contain;
 	}
 
