@@ -1,8 +1,4 @@
 <script>
-    function displayImage(){
-        
-        return null;
-    }
 </script>
 <article class="contact-card">
 	<h2>
@@ -37,43 +33,55 @@
             <span class="missing">Missing Photo</span>
         </slot>
     </div>
-    <button on:click={displayImage()}>Show Picture</button>
 </article>
 
 <style>
-    .picture{
-        display: none;
-    }
 	.contact-card {
-		width: 300px;
-		border: 1px solid #aaa;
-		border-radius: 2px;
-		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-		padding: 1em;
+		width: 750px;
+        border: 1px solid #aaa;
+        border-radius: 2px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 1em;
+        overflow: hidden; /* Clearfix to contain floated elements */
 	}
 
-	h2 {
-		padding: 0 0 0.2em 0;
-		margin: 0 0 1em 0;
-		border-bottom: 1px solid #ff3e00;
-	}
+	.details {
+        float: left;
+        width: 65%; /* Adjust as needed */
+    }
 
-	.hometown, .role,
-	.email, .details {
-		padding: 0 0 0 1.5em;
-		background: 0 0 no-repeat;
-		background-size: 20px 20px;
-		margin: 0 0 0.5em 0;
-		line-height: 1.2;
-	}
+    .picture {
+        float: right;
+        width: 40%; /* Adjust as needed */
+    }
 
-	.address {
-		background-image: url(/tutorial/icons/map-marker.svg);
-	}
-	.email {
-		background-image: url(/tutorial/icons/email.svg);
-	}
-	.missing {
-		color: #999;
-	}
+    h2 {
+        padding: 0 0 0.2em 0;
+        margin: 0 0 1em 0;
+        border-bottom: 1px solid #ff3e00;
+    }
+
+    .hometown,
+    .role,
+    .email,
+    .details {
+        padding: 0 0 0 1.5em;
+        margin: 0 0 0.5em 0;
+        line-height: 1.2;
+    }
+
+    .missing {
+        color: #999;
+    }
+
+    .picture slot {
+        display: block;
+    }
+
+    /* Clearfix to contain floated elements */
+    .contact-card::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 </style>
