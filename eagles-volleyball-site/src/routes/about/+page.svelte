@@ -17,7 +17,7 @@
 	</p>
 
 	<h1>Eagles Coaching Staff</h1>
-		<CoachCard>
+		<CoachCard >
 			<span slot="name"> Bryson Sullivan-Farrell </span>
 			<span slot="role"> Eaglets Head Coach</span>
 			<span slot="details"> Safe Sport Certified. 10-yr volleyball athelete. Experience coaching HS volleyball. </span>
