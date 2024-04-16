@@ -1,3 +1,9 @@
+<script>
+    function displayImage(){
+        
+        return null;
+    }
+</script>
 <article class="contact-card">
 	<h2>
 		<slot name="name">
@@ -26,9 +32,18 @@
 			<span class="missing">Unknown email</span>
 		</slot>
 	</div>
+    <div class="picture">
+        <slot name="picture">
+            <span class="missing">Missing Photo</span>
+        </slot>
+    </div>
+    <button on:click={displayImage()}>Show Picture</button>
 </article>
 
 <style>
+    .picture{
+        display: none;
+    }
 	.contact-card {
 		width: 300px;
 		border: 1px solid #aaa;

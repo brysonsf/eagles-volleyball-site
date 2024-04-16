@@ -1,5 +1,6 @@
 <script>
 	import CoachCard from "../CoachCard.svelte";
+	import Jasmine from "$lib/images/jasmine.png";
 </script>
 <svelte:head>
 	<title>About</title>
@@ -30,6 +31,7 @@
 		<span slot="details"></span>
 		<span slot="hometown"></span>
 		<span slot="email"></span>-->
+		<span slot="picture"><img src={Jasmine} alt="Jasmine Pic"></span>
 	</CoachCard>
 	<!-- card display -->
 
