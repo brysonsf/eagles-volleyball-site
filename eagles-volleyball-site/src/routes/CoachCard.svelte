@@ -5,7 +5,9 @@
 		<slot name="name">
 			<span class="missing">Unknown name</span>
 		</slot>
-        <slot name="button"></slot>
+        <slot name="button">
+            <span class="missing">Missing Photo</span>
+        </slot>
 	</h2>
     <div class="role">
 		<slot name="role">
@@ -31,7 +33,6 @@
 	</div>
     <div class="picture">
         <slot name="picture">
-            <span class="missing">Missing Photo</span>
         </slot>
     </div>
 </article>
