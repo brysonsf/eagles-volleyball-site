@@ -5,6 +5,7 @@
 		<slot name="name">
 			<span class="missing">Unknown name</span>
 		</slot>
+        <slot name="button"></slot>
 	</h2>
     <div class="role">
 		<slot name="role">

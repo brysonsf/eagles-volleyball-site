@@ -37,9 +37,12 @@
 				</CoachCard>
 			</div>
 			<div style="width: 50%;">
-				<button on:click={() => changePicture(Jasmine)}>Show/Hide Image</button>
 				<CoachCard>
 					<span slot="name"> Jasmine Chiasson </span>
+<span slot="button">
+	<button on:click={() => changePicture(Jasmine)}>Show/Hide Image</button>
+</span>
+
 					<!--<span slot="role"></span>
 					<span slot="details"></span>
 					<span slot="hometown"></span>
