@@ -5,15 +5,17 @@
 		<slot name="name">
 			<span class="missing">Unknown name</span>
 		</slot>
-        <slot name="button">
-            <span class="missing">Missing Photo</span>
-        </slot>
+        <div class="role">
+            <slot name="role">
+                <span class="missing">Coach</span>
+            </slot>
+        </div>
+        <div class="button">
+            <slot name="button">
+                <span class="missing">Missing Photo</span>
+            </slot>
+        </div>
 	</h2>
-    <div class="role">
-		<slot name="role">
-			<span class="missing">Coach</span>
-		</slot>
-	</div>
     <div class="details">
 		<slot name="details">
 			<span class="missing">Nova Scotia</span>
@@ -39,7 +41,7 @@
 
 <style>
 	.contact-card {
-		width: 750px;
+		width: 600px;
         border: 1px solid #aaa;
         border-radius: 2px;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -63,8 +65,11 @@
         border-bottom: 1px solid #ff3e00;
     }
 
+    .role{
+        float: right;
+    }
+
     .hometown,
-    .role,
     .email,
     .details {
         padding: 0 0 0 1.5em;
