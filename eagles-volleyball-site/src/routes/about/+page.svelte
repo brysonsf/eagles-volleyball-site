@@ -30,7 +30,7 @@
 <div class="row">
 	<div class="col">
 		<CoachCard>
-			<span slot="name"> Emmylou Umali </span>
+			<span slot="name"> <strong>Emmylou Umali</strong></span>
 			<span slot="button">
 				<button class="button-51" on:click={() => changePicture(Emmy)}>Show/Hide Image</button>
 			</span>
@@ -43,7 +43,7 @@
 	</div>
 	<div class="col">
 		<CoachCard>
-			<span slot="name"> Jasmine Chiasson </span>
+			<span slot="name"><strong>Jasmine Chiasson</strong></span>
 			<span slot="button">
 				<button on:click={() => changePicture(Jasmine)}>Show/Hide Image</button>
 			</span>
@@ -59,7 +59,7 @@
 <div class="row">
 	<div class="col">
 		<CoachCard>
-			<span slot="name"> Bryson Sullivan-Farrell </span>
+			<span slot="name"><strong>Bryson Sullivan-Farrell</strong></span>
 			<span slot="button">
 				<button on:click={() => changePicture(Bryson)}>Show/Hide Image</button>
 			</span>
@@ -78,7 +78,7 @@
 	</div>
 	<div class="col">
 		<CoachCard>
-			<span slot="name"> Curtis Robarts </span>
+			<span slot="name"><strong>Curtis Robarts</strong></span>
 			<span slot="button">
 				<button on:click={() => changePicture(Curtis)}>Show/Hide Image</button>
 			</span>
@@ -94,7 +94,7 @@
 <div class="row">
 	<div class="col">
 		<CoachCard>
-			<span slot="name"> Sophie Surette </span>
+			<span slot="name"><strong>Sophie Surette</strong></span>
 			<span slot="role"><strong>Girls Head Coach - Team Apex</strong></span>
 			<!--<span slot="details"></span>
 			<span slot="hometown"></span>
@@ -104,8 +104,8 @@
 	</div>
 	<div class="col">
 		<CoachCard>
-			<span slot="name"> Sarah van den Heuvel </span>
-			<span slot="role"> Girls Head Coach - Team Visionaries</span>
+			<span slot="name"><strong>Sarah van den Heuvel</strong></span>
+			<span slot="role"><strong>Girls Head Coach - Team Visionaries</strong></span>
 			<!--<span slot="details"></span>
 			<span slot="hometown"></span>
 			<span slot="email"></span>

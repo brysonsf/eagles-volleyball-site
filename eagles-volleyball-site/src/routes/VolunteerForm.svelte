@@ -1,12 +1,37 @@
+<script>
+    /**
+     * @type {string}
+     */
+    let fName;
+    /**
+     * @type {string}
+     */
+     let lName;
+     /**
+     * @type {string}
+     */
+    let group;
+    /**
+     * @type {string}
+     */
+     let email;
+    /**
+     * @type {string}
+     */
+    let details;
+    function doPost(){
+        console.log(fName, lName, group, email, details);
+    }
+</script>
 <div class="container">
-    <h1>Volunteer Signup</h1>
-    <form action="/action_page.php">
+	<h1>Volunteering with Eagles Volleyball</h1>
+    <form action=""><!--/action_page.php-->
     <div class="row">
       <div class="col-25">
         <label for="fname">First Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." bind:value={fName}>
       </div>
     </div>
     <div class="row">
@@ -14,15 +39,23 @@
         <label for="lname">Last Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." bind:value={lName}>
       </div>
     </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="lname">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email.." bind:value={email}>
+        </div>
+      </div>
     <div class="row">
       <div class="col-25">
         <label for="group">Group Preference</label>
       </div>
       <div class="col-75">
-        <select id="group" name="group">
+        <select id="group" name="group" bind:value={group}>
           <option value="eaglets">Eaglets Youth</option>
           <option value="boys">Boys Team</option>
           <option value="visionaries">Girls Team Visionaries </option>
@@ -35,12 +68,12 @@
         <label for="subject">Details + Questions</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Any questions or comments.." style="height:200px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Any questions or comments.." style="height:200px"  bind:value={details}></textarea>
       </div>
     </div>
     <br>
     <div class="row">
-      <button type="submit" value="Submit">Submit</button>
+      <button type="submit" value="Submit" on:click={doPost}>Share Volunteer Info with Eagles</button>
     </div>
     </form>
   </div>
