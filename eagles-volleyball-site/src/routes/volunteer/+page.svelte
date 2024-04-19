@@ -1,3 +1,6 @@
+<script>
+	import VolunteerForm from "../VolunteerForm.svelte";
+</script>
 <svelte:head>
 	<title>volunteering</title>
 	<meta name="description" content="Volunteering with the Eagles" />
@@ -16,4 +19,6 @@
 		<input>
 		<button type="submit">Share Volunteer Info with Eagles</button>
 	</form>
+	<br>
+	<VolunteerForm></VolunteerForm>
 </div>
