@@ -65,7 +65,7 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Details + Questions</label>
+        <label for="subject">Questions/Comments</label>
       </div>
       <div class="col-75">
         <textarea id="subject" name="subject" placeholder="Any questions or comments.." style="height:200px"  bind:value={details}></textarea>

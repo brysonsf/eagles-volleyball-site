@@ -6,5 +6,5 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>Girls Competitve Volleyball Program - Team Apex</h1>
+	<h1>Girls Competitive Volleyball Program - Team Apex</h1>
 </div>

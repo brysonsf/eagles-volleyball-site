@@ -6,5 +6,5 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>Boys Competitve Volleyball Program</h1>
+	<h1>Boys Competitive Volleyball Program</h1>
 </div>

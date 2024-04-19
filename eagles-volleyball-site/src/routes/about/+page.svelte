@@ -18,13 +18,20 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 <div class="text-column">
-	<h1>Our Mission, Values, And Vision</h1>
-	<p>
-		Mission
-		<br>Values
-		<br>Vision
-		<br>etc.
+	<h1>Our Mission & Values</h1>
+	<p class="mission">
+		Our mission is to bring volleyball to the youth regardless of demographics, skills, or socioeconomics. We strive to support any and all children who are inspired by volleyball, or share our love for the game.
 	</p>
+	<ul>
+		<li>Cherish any chance to play the game you love.</li>
+		<li>Support your teammates; faster alone farther together.</li>
+		<li>Look inward before you look outward</li>
+	</ul>
+	<h1>Our Vision</h1>
+	<p class="vision">
+		A world where volleyball is played by all, and where everybody knows they are welcome on the court.
+	</p>
+	
 </div>
 <h1>Eagles Coaching Staff</h1>
 <div class="row">
