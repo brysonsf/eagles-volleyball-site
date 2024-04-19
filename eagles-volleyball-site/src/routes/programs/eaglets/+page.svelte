@@ -6,7 +6,7 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>Eagles Volleyball Programming</h1>
+	<h1>Eaglets Beginner Youth Volleyball Program</h1>
 	<p>
 		<a href="https://www.facebook.com/groups/2018190391899731" target="_blank" rel="noopener">Eaglets Youth Volleyball Training Facebook Page</a>
 	</p>
