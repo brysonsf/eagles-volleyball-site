@@ -32,7 +32,7 @@
 		<CoachCard>
 			<span slot="name"> Emmylou Umali </span>
 			<span slot="button">
-				<button on:click={() => changePicture(Emmy)}>Show/Hide Image</button>
+				<button class="button-51" on:click={() => changePicture(Emmy)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Founder</strong></span>
 			<!--<span slot="details"></span>
