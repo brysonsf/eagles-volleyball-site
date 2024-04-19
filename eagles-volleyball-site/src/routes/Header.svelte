@@ -1,6 +1,25 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import eagle from '$lib/images/eaglesvball.jpg';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		let programAnchor = document.getElementById('program');
+		var programsOffered = document.getElementsByClassName('program');
+		console.log(programsOffered);
+		console.log(programAnchor?.focus());
+		programAnchor.addEventListener("click",  function() {
+			for (var i = 0; i < programsOffered.length; i++) {
+				let temp = programsOffered[i];
+				if(temp.style.display==="flex"){
+					temp.style.display="none";
+				}else{
+					temp.style.display="flex";
+				}
+				console.log(temp);
+			}
+		});
+	});
 </script>
 
 <header>
@@ -22,7 +41,19 @@
 				<a href="/about">About</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs' ? 'page' : undefined}>
-				<a href="/programs">Programs</a>
+				<a id='program' href="/programs">Programs</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/programs/eaglets' ? 'page' : undefined} class="program">
+				<a href="/programs/eaglets" class="program">Eaglets</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/programs/boys' ? 'page' : undefined} class="program">
+				<a href="/programs/boys" class="program">Boys Competitive</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/programs/visionaries' ? 'page' : undefined} class="program">
+				<a href="/programs/visionaries" class="program">Girls Visionaries</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/programs/apex' ? 'page' : undefined} class="program">
+				<a href="/programs/apex" class="program">Girls Apex</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/volunteer' ? 'page' : undefined}>
 				<a href="/volunteer">Volunteer</a>
@@ -39,6 +70,13 @@
 </header>
 
 <style>
+	.program{
+		display: none;
+		background-color: var(--color-bg-2);
+	}
+	#program:hover{
+		color:white;
+	}
 	header {
 		display: flex;
 		justify-content: space-between;
