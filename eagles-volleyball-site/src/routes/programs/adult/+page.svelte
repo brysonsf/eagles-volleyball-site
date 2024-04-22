@@ -11,4 +11,9 @@
 	<h1>Adult drop-in Halifax - Intermediate Level</h1>
 	<h1>Adult drop-in Halifax - Advanced Level</h1>
 	<h1>Adult Co-ed league Halifax - Intermediate/Advanced Level</h1>
+	
+	<p>
+		<a href="https://www.facebook.com/groups/1530371987469476" target="_blank" rel="noopener">Eagles Co-ed Volleyball Drop-In Facebook Page</a>
+	</p>
+	
 </div>
