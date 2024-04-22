@@ -3,23 +3,20 @@
     import { goto } from '$app/navigation';
 
     onMount(() => {
+        function updateHeader(){
+            var programsOffered = document.getElementsByClassName('program');
+		
+            for (var i = 0; i < programsOffered.length; i++) {
+                programsOffered[i].style.display="flex";
+            }
+        }
+
         let adult = document.getElementById('dropin');
         let boys = document.getElementById('boys');
         let apex = document.getElementById('apex');
         let visionaries = document.getElementById('visionaries');
         let eaglets = document.getElementById('eaglets');
-        function updateHeader(){
-            var programsOffered = document.getElementsByClassName('program');
-		
-            for (var i = 0; i < programsOffered.length; i++) {
-                let temp = programsOffered[i];
-                if(temp.style.display==="flex"){
-                    temp.style.display="none";
-                }else{
-                    temp.style.display="flex";
-                }
-            }
-        }
+        
         adult.addEventListener("click",  function() {
             updateHeader();
             goto("/programs/adult");
