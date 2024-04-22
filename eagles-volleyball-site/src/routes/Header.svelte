@@ -6,8 +6,6 @@
 	onMount(() => {
 		let programAnchor = document.getElementById('program');
 		var programsOffered = document.getElementsByClassName('program');
-		console.log(programsOffered);
-		console.log(programAnchor?.focus());
 		programAnchor.addEventListener("click",  function() {
 			for (var i = 0; i < programsOffered.length; i++) {
 				let temp = programsOffered[i];
@@ -16,7 +14,6 @@
 				}else{
 					temp.style.display="flex";
 				}
-				console.log(temp);
 			}
 		});
 	});
@@ -24,7 +21,7 @@
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="/">
 			<img src={eagle} alt="Eagles Logo" />
 		</a>
 	</div>
@@ -54,6 +51,9 @@
 			</li>
 			<li aria-current={$page.url.pathname === '/programs/apex' ? 'page' : undefined} class="program">
 				<a href="/programs/apex" class="program">Girls Apex</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/programs/adult' ? 'page' : undefined} class="program">
+				<a href="/programs/adult" class="program">Adult</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/volunteer' ? 'page' : undefined}>
 				<a href="/volunteer">Volunteer</a>
