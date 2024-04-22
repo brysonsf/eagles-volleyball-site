@@ -4,11 +4,9 @@
 </script>
 
 <svelte:head>
-	<title>Eagles Volleyball Halifax - Competitive Youth Teams and Adult Drop-ins</title>> <!-- Home Page default SEO -->
+	<title>Eagles Volleyball Halifax - Competitive Youth Teams and Adult Drop-ins</title> <!-- Home Page default SEO -->
 	<meta name="description" content="Eagles Volleyball Organization - For All Ages Halifax. Variety of program offerings.">
 	<meta name="keywords" content="Eagles, Volleyball, Halifax, Volley, Ball, Adult, Co-ed, Drop-In, Competitive, Children, Youth, Teen, Camp, Training, Program, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18">
-	<meta name="author" content="Bryson Sullivan-Farrell">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
 
 <section>

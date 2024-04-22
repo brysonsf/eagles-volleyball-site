@@ -17,8 +17,6 @@
 	<title>All about the Eagles Org. It's mission, values, vision, and the coaches. </title>
 	<meta name="description" content="Eagles Volleyball Halifax - Core beliefs and about the coaches">
 	<meta name="keywords" content="Coaching, Eagles, Volleyball, Halifax, Volley, Ball, Adult, Co-ed, Drop-In, Competitive, Children, Youth, Teen, Camp, Training, Program, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18">
-	<meta name="author" content="Bryson Sullivan-Farrell">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
 <div class="text-column">
 	<h1>Our Mission & Values</h1>
