@@ -2,7 +2,6 @@
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import './styles.css';
-    import { base } from '$app/paths';
 </script>
 
 <div class="app">
