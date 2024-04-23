@@ -14,7 +14,7 @@
 	}
 </script>
 <svelte:head>
-	<title>AW NUTS All about the Eagles Org. It's mission, values, vision, and the coaches. </title>
+	<title>All about the Eagles Org. It's mission, values, vision, and the coaches. </title>
 	<meta name="description" content="Eagles Volleyball Halifax - Core beliefs and about the coaches">
 	<meta name="keywords" content="Coaching, Eagles, Volleyball, Halifax, Volley, Ball, Adult, Co-ed, Drop-In, Competitive, Children, Youth, Teen, Camp, Training, Program, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18">
 </svelte:head>
