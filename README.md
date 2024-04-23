@@ -1,5 +1,9 @@
 # eagles_website
-A website designed for the Eagles Volleyball Organization in Halifax, NS, Canada. To support their programming, operations, and act as an information hub for their mission, values, and opportunities. Created in Angular/ TS HTML CSS
+A website designed for the Eagles Volleyball Organization in Halifax, NS, Canada. 
+To support their programming, operations, and act as an information hub for their mission, values, and opportunities. 
+Created in Angular/ TS HTML CSS
+
+The production / live version of this app can be found at https://eagles-volleyball-site.pages.dev/
 
 ## Developing
 
@@ -14,13 +18,15 @@ npm run dev -- --open
 
 ## Building
 
-To build a production version of this app for GitHub Pages:
+To build a production version of this app:
 
 ```bash
-npm run deploy
+npm run build
 ```
+This generates a set of files in the `.svelte-kit/` folder under `/output/`
 
-You can preview the production build with `npm run preview`.
-
-Built website files for production can be found in the `/docs/` directory.
+You can preview the production build with 
+```bash
+`npm run preview`.
+```
 
