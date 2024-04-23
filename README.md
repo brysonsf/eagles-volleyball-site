@@ -14,7 +14,7 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of this app for GitHub Pages:
+To build a production version of this app for GitHub Pages:
 
 ```bash
 npm run deploy

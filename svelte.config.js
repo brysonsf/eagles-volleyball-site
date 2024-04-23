@@ -10,9 +10,13 @@ const config = {
 		  assets: 'docs',
 		  fallback: null,
 		  precompress: false,
-		  domain: '',
-		  jekyll: false
-		})
-	  }
+		  jekyll: false,
+		  paths: {
+            base: process.env.NODE_ENV === 'production' ? '/eagles-volleyball-site' : '',
+		},
+		}),
+		
+	}
+		
 };
 export default config;

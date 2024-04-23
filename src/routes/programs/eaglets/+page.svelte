@@ -4,6 +4,7 @@
 	import legs from '$lib/images/legs.jpg';
 	import hop from '$lib/images/hop.jpg';
 	import Carousel from "svelte-carousel";
+
 	const images = [
 		{
 			url: poster,

@@ -2,7 +2,8 @@
 	import { page } from '$app/stores';
 	import eagle from '$lib/images/eaglesvball.jpg';
 	import { onMount } from 'svelte';
-
+    import { base } from '$app/paths';
+	
 	onMount(() => {
 		let programAnchor = document.getElementById('program');
 		var programsOffered = document.getElementsByClassName('program');
@@ -21,7 +22,7 @@
 
 <header>
 	<div class="corner">
-		<a href="/">
+		<a href="{base}/">
 			<img src={eagle} alt="Eagles Logo" />
 		</a>
 	</div>
@@ -32,31 +33,31 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="{base}/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="{base}/about">About</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs' ? 'page' : undefined}>
-				<a id='program' href="/programs">Programs</a>
+				<a id='program' href="{base}/programs">Programs</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs/eaglets' ? 'page' : undefined} class="program">
-				<a href="/programs/eaglets" class="program">Eaglets</a>
+				<a href="{base}/programs/eaglets" class="program">Eaglets</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs/boys' ? 'page' : undefined} class="program">
-				<a href="/programs/boys" class="program">Boys Competitive</a>
+				<a href="{base}/programs/boys" class="program">Boys Competitive</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs/visionaries' ? 'page' : undefined} class="program">
-				<a href="/programs/visionaries" class="program">Girls Visionaries</a>
+				<a href="{base}/programs/visionaries" class="program">Girls Visionaries</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs/apex' ? 'page' : undefined} class="program">
-				<a href="/programs/apex" class="program">Girls Apex</a>
+				<a href="{base}/programs/apex" class="program">Girls Apex</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/programs/adult' ? 'page' : undefined} class="program">
-				<a href="/programs/adult" class="program">Adult</a>
+				<a href="{base}/programs/adult" class="program">Adult</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/volunteer' ? 'page' : undefined}>
-				<a href="/volunteer">Volunteer</a>
+				<a href="{base}/volunteer">Volunteer</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
