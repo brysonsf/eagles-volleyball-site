@@ -52,9 +52,9 @@
 				<button class="button-51" on:click={() => changePicture(Emmy)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Founder</strong></span>
-			<!--<span slot="details"></span>
-			<span slot="hometown"></span>
-			<span slot="email"></span>-->
+			<!--<span slot="details"></span>-->
+			<span slot="hometown">Phillipines</span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:emmylou.umali@gmail.com" target="_blank" rel="noopener noreferrer">Contact Emmylou</a></span>
 			<span slot="picture"><img id={Emmy} src={Emmy} alt="Emmy Pic" style="display:none;"></span>
 		</CoachCard>
 	</div>

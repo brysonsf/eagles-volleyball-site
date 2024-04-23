@@ -1,6 +1,7 @@
 <script>
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import hop from '$lib/images/hop.jpg';
 	/**
      * @type {string}
      */
