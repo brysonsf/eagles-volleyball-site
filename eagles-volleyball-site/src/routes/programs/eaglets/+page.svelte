@@ -3,6 +3,29 @@
 	import poster from '$lib/images/poster.jpg';
 	import legs from '$lib/images/legs.jpg';
 	import hop from '$lib/images/hop.jpg';
+	import Carousel from "svelte-carousel";
+	const images = [
+		{
+			url: poster,
+			description: "camp 2 poster",
+		},
+		{
+			url: groupshot,
+			description: "camp 1 week 1 group shot",
+		},
+		{
+			url: legs,
+			description: "legs up everyone!",
+		},
+		{
+			url: hop,
+			description: "izuumi hops!",
+		},
+	];
+	let carousel; // for calling methods of the carousel instance
+	const handleNextClick = () => {
+		carousel.goToNext();
+	};
 </script>
 <svelte:head>
 	<title>Eaglets Halifax - Youth Beginner Volleyball Training Program</title>
@@ -19,32 +42,24 @@
 	<p>
 		<br>Eaglets 9-13 youth Training info
 	</p>
-	<picture>
-		<source srcset={groupshot} type="image/webp" />
-		<img src={groupshot} alt="Eaglets First Camp" />
-		<caption>Eaglets season 1 Feb-Mar 2024</caption>
-	</picture>
-	<picture>
-		<source srcset={poster} type="image/webp" />
-		<img src={poster} alt="Eaglets Camp 2" />
-		<caption>Eaglets season 2 Jun-July 2024</caption>
-	</picture>
-	<picture>
-		<source srcset={hop} type="image/webp" />
-		<img src={hop} alt="Eaglets Camp 1 jumper" />
-		<caption>Eaglets season 1 - izuumi jumps!</caption>
-	</picture>
-	<picture>
-		<source srcset={legs} type="image/webp" />
-		<img src={legs} alt="Eaglets Camp 1 legs up!" />
-		<caption>Eaglets season 1 everyone Legs up!</caption>
-	</picture>
+	<Carousel
+		bind:this={carousel}
+		let:loaded
+		autoplay
+		autoplayDuration={3000}
+		autoplayProgressVisible
+	>
+		{#each images as src, imageIndex (src)}
+		<div class="img-container">
+			{#if loaded.includes(imageIndex)}
+			<img src={src.url} alt={src.description} width={1000} height={600} />
+			{/if}
+		</div>
+		{/each}
+</Carousel>
 </div>
 <style>
 	img{
 		width: 100%;
-	}
-	caption{
-		width: 250px;
 	}
 </style>
