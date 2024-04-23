@@ -8,9 +8,6 @@ export default {
 				include: ['/*'],
 				exclude: ['<all>']
 			},
-			paths: {
-				base: process.env.NODE_ENV === 'production' ? '/eagles-volleyball-site' : '',
-			},
 		platformProxy: {
 			persist: './your-custom-path'
 		}
