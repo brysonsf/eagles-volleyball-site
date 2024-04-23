@@ -18,21 +18,30 @@
 	<meta name="description" content="Eagles Volleyball Halifax - Core beliefs and about the coaches">
 	<meta name="keywords" content="Coaching, Eagles, Volleyball, Halifax, Volley, Ball, Adult, Co-ed, Drop-In, Competitive, Children, Youth, Teen, Camp, Training, Program, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18">
 </svelte:head>
-<div class="text-column">
-	<h1>Our Mission & Values</h1>
-	<p class="mission">
-		Our mission is to bring volleyball to the youth regardless of demographics, skills, or socioeconomics. We strive to support any and all children who are inspired by volleyball, or share our love for the game.
-	</p>
-	<ul>
-		<li>Cherish any chance to play the game you love.</li>
-		<li>Support your teammates; faster alone farther together.</li>
-		<li>Look inward before you look outward</li>
-	</ul>
-	<h1>Our Vision</h1>
-	<p class="vision">
-		A world where volleyball is played by all, and where everybody knows they are welcome on the court.
-	</p>
+
+<div class="row">
+	<div class="col">
+		<h1>Our Mission</h1>
+		<p class="mission">
+			<strong>is to share volleyball with the Halifax youth. </strong>We strive to support any and all children who are inspired by volleyball and share our love for the game.
+		</p>
+
+	</div>
+	<div class="col">
+		<h1>Our Vision</h1>
+		<p class="vision">
+			<strong>is a world where volleyball is played by all</strong>, and where everybody knows they are welcome on the court.
+		</p>
+	</div>
 	
+	<div class="col">
+		<h1>Our Values</h1>
+		<ul>
+			<li><strong>Cherish</strong> any chance to play the game you love.</li>
+			<li><strong>Support</strong> your teammates; faster alone farther together.</li>
+			<li><strong>Growth oriented</strong> mindsets and life skills.</li>
+		</ul>
+	</div>
 </div>
 <h1>Eagles Coaching Staff</h1>
 <div class="row">

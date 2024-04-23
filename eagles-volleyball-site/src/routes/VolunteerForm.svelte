@@ -24,7 +24,8 @@
     }
 </script>
 <div class="container">
-	<h1>Volunteering with Eagles Volleyball</h1>
+    <slot name="formTitle">
+    </slot>
     <form action=""><!--/action_page.php-->
     <div class="row">
       <div class="col-25">
