@@ -1,5 +1,5 @@
 <script>
-	import ApexVsVision from "$lib/images/apexvsvision.jpg";
+	import whyApex from '$lib/images/why apex.png'
 </script>
 <svelte:head>
 	<title>Team Apex - Halifax Bedford Blazing Eagles Youth Girls Competition Team</title>
@@ -9,19 +9,5 @@
 
 <div class="text-column">
 	<h1>Girls Competitive Volleyball Program - Team Apex</h1>
-	<div class="crop">
-		<img src={ApexVsVision} alt="Choosing Team Visionaries or Team Apex">
-	</div>
+	<img src={whyApex} alt="Choosing Team Visionaries or Team Apex">
 </div>
-
-<style>
-	.crop {
-        overflow: hidden;
-    }
-
-    .crop img {
-        width: 50%;
-        height: 100%;
-        margin: 0 0 -190px 50px;
-    }
-</style>
