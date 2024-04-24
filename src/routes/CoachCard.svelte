@@ -91,4 +91,10 @@
         display: table;
         clear: both;
     }
+     /* mobile breakpoints */
+	@media (max-width: 600px) {
+        .contact-card {
+            width: 500px;
+        }
+    }
 </style>

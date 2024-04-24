@@ -131,22 +131,36 @@
 	</div>
 </div>
 <style>
-	.row{
+	.row {
 		display: flex;
+		flex-wrap: wrap; /* Allow columns to wrap to the next line */
 	}
-	.col{
+
+	.col {
 		flex: 50%;
+		padding: 0 10px; /* Add spacing between columns */
+		box-sizing: border-box; /* Include padding in column width */
+		margin-bottom: 20px; /* Add some space between rows */
 	}
-	img{
-		width: 90%;
-		height: 90%;
+
+	img {
+		width: 100%; /* Make images fill their container */
+		height: auto; /* Maintain aspect ratio */
 	}
-	button{
-        float: right;
-        margin: 1vw 0 0 0;
-    }
-	.anchorEmail{
+
+	button {
+		float: right;
+		margin: 1vw 0 0 0;
+	}
+
+	.anchorEmail {
 		text-decoration-line: underline;
-  		text-decoration-color: blue;
+		text-decoration-color: blue;
+	}
+	/* mobile breakpoints */
+	@media (max-width: 600px) {
+		.col {
+			flex: 100%; /* Full width on small screens */
+		}
 	}
 </style>

@@ -19,17 +19,7 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-				
-			</picture>
-			
-		</span>
-		<span>future Eagles!</span>
-	</h1>
+	<h1>Welcome future Eagles!</h1>
 	<div>
 		<h2>For new players with no idea where to start, check out our programs <a href="/programs">you can find our programs here!</a></h2> 
 	</div>
@@ -62,22 +52,6 @@
 		width: 100%;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-		
 	input[type=text] {
 		width: 75%;
 		padding: 12px;
@@ -87,10 +61,6 @@
 		margin: 10px;
 	}
 
-	label {
-		padding: 12px 12px 12px 0;
-		display: inline-block;
-	}
 	.container {
 		min-width: 600px;
 		border-radius: 5px;
