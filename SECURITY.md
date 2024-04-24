@@ -12,8 +12,8 @@ Current production version: 1.0.0 beta
 ## Reporting a Vulnerability
 
 Please report vulnerabilities either:
-  via <a href="brysonsf@gmail.com">email</a> to Bryson 
-  via the [open issues](https://github.com/brysonsf/eagles-volleyball-site/issues) for a full list of proposed features, bugs, and known issues).
+  <br>- via <a href="brysonsf@gmail.com">email</a> to Bryson.
+  <br>- via the [open issues](https://github.com/brysonsf/eagles-volleyball-site/issues) for a full list of proposed features, bugs, and known issues).
 
 You can expect to be updated on any bugs, features, or issues you brought to our attention. I will look into it within 1 or 2 weeks depending on severity; and will fix it as soon as I have the solution(s). 
 
