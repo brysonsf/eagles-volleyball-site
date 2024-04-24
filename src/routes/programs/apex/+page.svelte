@@ -11,3 +11,12 @@
 	<h1>Girls Competitive Volleyball Program - Team Apex</h1>
 	<img src={whyApex} alt="Choosing Team Visionaries or Team Apex">
 </div>
+
+<style>
+	/* Responsive layout - when the screen is less than 600px wide, make the images much smaller */
+	@media screen and (max-width: 600px) {
+		img{
+			width: 500px;
+		}
+	}
+</style>
