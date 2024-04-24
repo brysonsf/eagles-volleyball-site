@@ -155,6 +155,7 @@ Project Link: [https://github.com/brysonsf/eagles-volleyball-site](https://githu
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
+* [Svelte](https://svelte.dev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
