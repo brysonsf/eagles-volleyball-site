@@ -63,4 +63,10 @@
 	img{
 		width: 100%;
 	}
+	/* mobile breakpoints */
+	@media (max-width: 600px) {
+		.text-column{
+			width: 500px;
+		}
+	}
 </style>
