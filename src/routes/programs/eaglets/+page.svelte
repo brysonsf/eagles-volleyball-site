@@ -3,6 +3,7 @@
 	import poster from '$lib/images/poster.jpg';
 	import legs from '$lib/images/legs.jpg';
 	import hop from '$lib/images/hop.jpg';
+	import apexvsvision from '$lib/images/apexvsvision.jpg';
 	import Carousel from "svelte-carousel";
 
 	const images = [
@@ -21,6 +22,10 @@
 		{
 			url: hop,
 			description: "izuumi hops!",
+		},
+		{
+			url: apexvsvision,
+			description: "picking between team apex and team visionaries",
 		},
 	];
 	let carousel; // for calling methods of the carousel instance
