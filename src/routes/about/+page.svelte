@@ -162,6 +162,7 @@
 			flex: 100%; /* Full width on small screens */
 		}
 		.row{
+			width: 500px;
 			flex-wrap: wrap; /* Allow columns to wrap to the next line */
 		}
 	}
