@@ -132,12 +132,6 @@ button:hover {
     line-height: 2rem; /* 32px */
   }
 }
-/* mobile break */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
 
 @media (min-width: 720px) {
 	h1 {

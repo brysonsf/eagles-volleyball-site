@@ -133,7 +133,6 @@
 <style>
 	.row {
 		display: flex;
-		flex-wrap: wrap; /* Allow columns to wrap to the next line */
 	}
 
 	.col {
@@ -161,6 +160,9 @@
 	@media (max-width: 600px) {
 		.col {
 			flex: 100%; /* Full width on small screens */
+		}
+		.row{
+			flex-wrap: wrap; /* Allow columns to wrap to the next line */
 		}
 	}
 </style>
