@@ -1,10 +1,3 @@
-# eagles_website
-
-The production / live version of this app is linked to the main branch of this repository, and can be found live at https://eagles-volleyball-site.pages.dev/
-
-<a name="readme-top"></a>
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -13,13 +6,11 @@ The production / live version of this app is linked to the main branch of this r
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+# eagles_website
 
+The production / live version of this app is linked to the main branch of this repository, and can be found live at https://eagles-volleyball-site.pages.dev/
 
+<a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -59,17 +50,20 @@ The production / live version of this app is linked to the main branch of this r
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <!-- ABOUT THE PROJECT -->
@@ -86,7 +80,7 @@ Created in Angular/ TS HTML CSS
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Major frameworks/libraries used to construct this appliaition.
 
 * [![Next][Next.js]][Next-url]
 * [![Vue][Vue.js]][Vue-url]
@@ -94,9 +88,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 * [![Cloudflare][Cloudflare.com]][Cloudflare-url]
+* [![Vite][Vite.com]][Vite-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -117,7 +111,6 @@ Follow the opened port to view a local version of the website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## Building
 
 To build a production version of this app:
@@ -133,20 +126,16 @@ You can preview this production build with
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
 - [x] Add Changelog
-- [x] Add back to top links
+- [ ] Fix readme links
 - [ ] Add actions to volunteer and newsletter buttons
-- [ ] 
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Add program / team information
+- [ ] Get coach information 
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/brysonsf/eagles-volleyball-site/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +144,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 Bryson Sullivan-Farrell - brysonsf@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/brysonsf/eagles-volleyball-site/
+Project Link: [https://github.com/brysonsf/eagles-volleyball-site](https://github.com/brysonsf/eagles-volleyball-site/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,32 +152,26 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/br
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Cloudflare.com]: https://img.shields.io/badge/logo-cloudflare-orange?logo=cloudflare
 [Cloudflare-url]: https://www.cloudflare.com/
-[Cloudflare-shield]: src/lib/images/Cloudflare_Logo.svg
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[Vite.com]: https://img.shields.io/badge/logo-vite-lightblue?logo=vite
+[Vite-url]: https://vitejs.dev/
+[contributors-shield]: https://img.shields.io/github/contributors/brysonsf/eagles-volleyball-site?style=for-the-badge
+[contributors-url]: https://github.com/brysonsf/eagles-volleyball-site/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/brysonsf/eagles-volleyball-site?style=for-the-badge
 [forks-url]: https://github.com/brysonsf/eagles-volleyball-site/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/brysonsf/eagles-volleyball-site?style=for-the-badge
 [stars-url]: https://github.com/brysonsf/eagles-volleyball-site/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-shield]: https://img.shields.io/github/issues/brysonsf/eagles-volleyball-site?style=for-the-badge
+[issues-url]: https://github.com/brysonsf/eagles-volleyball-site/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/brysonsf
 [product-screenshot]: images/screenshot.png
