@@ -164,4 +164,51 @@
 	a:hover {
 		color: var(--color-theme-1);
 	}
+	/* mobile breakpoints */
+	@media (max-width: 600px) {
+		header {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.corner {
+			width: 4em;
+			height: 4em;
+		}
+
+		.corner img {
+			width: 4em;
+			height: 4em;
+		}
+
+		nav {
+			width: 100%;
+		}
+
+		ul {
+			flex-direction: column;
+			height: auto;
+			background: none;
+		}
+
+		li {
+			height: auto;
+		}
+
+		li[aria-current='page']::before {
+			display: none;
+		}
+
+		nav a {
+			padding: 0.5rem;
+		}
+
+		.program {
+			display: none;
+		}
+
+		#program {
+			color: var(--color-text);
+		}
+	}
 </style>

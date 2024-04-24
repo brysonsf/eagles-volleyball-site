@@ -91,7 +91,6 @@
 		padding: 12px 12px 12px 0;
 		display: inline-block;
 	}
-
 	.container {
 		min-width: 600px;
 		border-radius: 5px;
@@ -99,7 +98,15 @@
 		background-image: linear-gradient(to bottom left, #ebb48f, #9dc7ee, #ebb48f);
 		padding: 20px;
 	}
-
+	@media (max-width: 600px) {
+		.container {
+			min-width: 300px;
+			border-radius: 5px;
+			background-color: var(--color-bg-2);
+			background-image: linear-gradient(to bottom left, #ebb48f, #9dc7ee, #ebb48f);
+			padding: 20px;
+		}
+	}
 	.col-25 {
 		float: left;
 		width: 25%;
