@@ -18,7 +18,7 @@
 	</h2>
     <div class="details">
 		<slot name="details">
-			<span class="missing">Nova Scotia</span>
+			<span class="missing">Missing Coach Details</span>
 		</slot>
 	</div>
 	
@@ -68,7 +68,6 @@
     .role{
         float: right;
     }
-
     .hometown,
     .email,
     .details {

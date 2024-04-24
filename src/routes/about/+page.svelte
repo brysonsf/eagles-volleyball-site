@@ -18,12 +18,11 @@
 	<meta name="description" content="Eagles Volleyball Halifax - Core beliefs and about the coaches">
 	<meta name="keywords" content="Coaching, Eagles, Volleyball, Halifax, Volley, Ball, Adult, Co-ed, Drop-In, Competitive, Children, Youth, Teen, Camp, Training, Program, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18">
 </svelte:head>
-
 <div class="row">
 	<div class="col">
 		<h1>Our Mission</h1>
 		<p class="mission">
-			<strong>is to share volleyball with the Halifax youth. </strong>We strive to support any and all children who are inspired by volleyball and share our love for the game.
+			is to <strong>share quality volleyball experiences; especially with the Halifax youth. </strong>We strive to support any and all children who are inspired by volleyball and share our love for the game.
 		</p>
 
 	</div>
@@ -36,6 +35,9 @@
 	
 	<div class="col">
 		<h1>Our Values</h1>
+		<p>
+			The Eagles Core Values are <strong>inclusiveness, unity, respect and leadership.</strong>
+		</p>
 		<ul>
 			<li><strong>Cherish</strong> any chance to play the game you love.</li>
 			<li><strong>Support</strong> your teammates; faster alone farther together.</li>
@@ -65,9 +67,15 @@
 				<button on:click={() => changePicture(Jasmine)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Technical Director</strong></span>
-			<!--<span slot="details"></span>
-			<span slot="hometown"></span>
-			<span slot="email"></span>-->
+			<span slot="details">
+				<ul>
+					<li>6 years of playing experience</li>
+					<li> 1 year with UMCS (home university team)</li>
+					<li>Former PLM high school volleyball coach</li>
+				</ul>
+			</span>
+			<span slot="hometown"> Caraquet, New Brunswick, Canada</span>
+			<!--<span slot="email"></span>-->
 			<span slot="picture"><img id={Jasmine} src={Jasmine} alt="Jasmine Pic" style="display:none;"></span>
 		</CoachCard>
 	</div>
@@ -84,7 +92,7 @@
 			<span slot="details">
 				<ul>
 					<li>10-years playing experience. Trained as a middle. </li>
-					<li>Former HS Volleyball Coach</li>
+					<li>Former Riverdale HS Volleyball Coach in Toronto</li>
 					<li>Safe Sport Certified </li>
 				</ul>
 			</span>
@@ -149,7 +157,7 @@
 
 	button {
 		float: right;
-		margin: 1vw 0 0 0;
+		margin: 1vw 1vw 0 0;
 	}
 
 	.anchorEmail {
