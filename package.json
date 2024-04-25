@@ -1,7 +1,7 @@
 {
 	"name": "eagles-volleyball-site",
 	"version": "0.0.1",
-	"homepage": "http://brysonsf.github.io/eagles-volleyball-site",
+	"homepage": "http://eagles-volleyball-site.pages.dev",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",

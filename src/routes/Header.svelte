@@ -5,8 +5,8 @@
 	
 	onMount(() => {
 		let programAnchor = document.getElementById('program');
-		var programsOffered = document.getElementsByClassName('program');
-		programAnchor.addEventListener("click",  function() {
+		var programsOffered = document.getElementsByClassName('program') as HTMLCollectionOf<HTMLElement>;
+		programAnchor?.addEventListener("click",  function() {
 			for (var i = 0; i < programsOffered.length; i++) {
 				let temp = programsOffered[i];
 				if(temp.style.display==="flex"){
