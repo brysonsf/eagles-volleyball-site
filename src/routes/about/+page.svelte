@@ -145,7 +145,7 @@
 				</ul>
 			</span>
 			<span slot="hometown">Antigonish, NS</span>
-			<span slot="email">sarahc.vdh@gmail.com</span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:sarahc.vdh@gmail.com" target="_blank" rel="noopener noreferrer">Contact Sarah</a></span>
 			<span slot="picture"><img id={Sarah} src={Sarah} alt="Sarah Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
