@@ -2,6 +2,7 @@
 	import CoachCard from "../CoachCard.svelte";
 	import Jasmine from "$lib/images/jasmine.png";
 	import Emmy from "$lib/images/emmy.png";
+	import Sarah from "$lib/images/sarah.jpg";
 	import Bryson from "$lib/images/bryson.png";
 	import Curtis from "$lib/images/curtis.png";
 	function changePicture(input){
@@ -72,6 +73,7 @@
 					<li>6 years of playing experience</li>
 					<li> 1 year with UMCS (home university team)</li>
 					<li>Former PLM high school volleyball coach</li>
+					<li>Certifications: Safe Sport</li>
 				</ul>
 			</span>
 			<span slot="hometown"> Caraquet, New Brunswick, Canada</span>
@@ -93,7 +95,7 @@
 				<ul>
 					<li>10-years playing experience. Trained as a middle. </li>
 					<li>Former Riverdale HS Volleyball Coach in Toronto</li>
-					<li>Safe Sport Certified </li>
+					<li>Certifications: Safe Sport</li>
 				</ul>
 			</span>
 			<span slot="hometown"> Toronto, Ontario, Canada </span>
@@ -108,8 +110,8 @@
 				<button on:click={() => changePicture(Curtis)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Boys Head Coach</strong></span>
-			<!--<span slot="details"> Safe Sport Certified. 10-yr volleyball athelete. Experience coaching HS volleyball. </span>
-			<span slot="hometown"> Toronto, Ontario, Canada </span>
+			<!--<span slot="details"> Certifications: Safe Sport. </span>
+			<span slot="hometown"></span>
 			<span slot="email"> brysonsf@gmail.com </span> -->
 			<span slot="picture"><img id={Curtis} src={Curtis} alt="Curtis Pic" style="display: none;"></span>
 		</CoachCard>
@@ -130,11 +132,21 @@
 	<div class="col">
 		<CoachCard>
 			<span slot="name"><strong>Sarah van den Heuvel</strong></span>
+			<span slot="button">
+				<button on:click={() => changePicture(Sarah)}>Show/Hide Image</button>
+			</span>
 			<span slot="role"><strong>Girls Head Coach - Team Visionaries</strong></span>
-			<!--<span slot="details"></span>
-			<span slot="hometown"></span>
-			<span slot="email"></span>
-			<span slot="picture"><img src={Sarah} alt="Sarah Pic"></span>-->
+			<span slot="details">
+				<ul>
+					<li>Began playing volleyball in 2011, played for the Dal AC Rams in university</li>
+					<li>Head coach with Dartmouth Volleyball Club for two seasons</li>
+					<li>Will be an assistant coach with Team NS this summer</li>
+					<li>Certifications: Safe Sport & Foundations of Volleyball</li>
+				</ul>
+			</span>
+			<span slot="hometown">Antigonish, NS</span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:sarahc.vdh@gmail.com" target="_blank" rel="noopener noreferrer">Contact Sarah</a></span>
+			<span slot="picture"><img id={Sarah} src={Sarah} alt="Sarah Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
 </div>
