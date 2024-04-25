@@ -19,23 +19,33 @@
         
         adult.addEventListener("click",  function() {
             updateHeader();
-            goto("/programs/adult");
+            goto('/').then(
+              () => goto("/programs/adult")
+            );
         });
         boys.addEventListener("click",  function() {
             updateHeader();
-            goto("/programs/boys");
+            goto('/').then(
+              () => goto("/programs/boys")
+            );
         });
         apex.addEventListener("click",  function() {
             updateHeader();
-            goto("/programs/apex");
+            goto('/').then(
+              () => goto("/programs/apex")
+            );
         });
         visionaries.addEventListener("click",  function() {
             updateHeader();
-            goto("/programs/visionaries");
+            goto('/').then(
+              () => goto("/programs/visionaries")
+            );
         });
         eaglets.addEventListener("click",  function() {
             updateHeader();
-            goto("/programs/eaglets");
+            goto('/').then(
+              () => goto("/programs/eaglets")
+            );
         });
     });
    

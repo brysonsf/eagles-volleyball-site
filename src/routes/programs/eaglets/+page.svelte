@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import groupshot from '$lib/images/groupshot.jpg';
 	import poster from '$lib/images/poster.jpg';
 	import legs from '$lib/images/legs.jpg';

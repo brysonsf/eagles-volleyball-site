@@ -1,5 +1,6 @@
 <script>
 	import ProgramInfo from "./ProgramInfo.svelte";
+	import Header from "../Header.svelte";
 </script>
 <svelte:head>
 	<title>Programs and Teams with the Eagles. Competitive Teams and Training Programs for All Ages in Halifax</title>
