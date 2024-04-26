@@ -1,38 +1,57 @@
-<script>
+<script lang="ts">
+  import db from "../firebaseconfig.js";
+  import { goto } from '$app/navigation';
+  import { collection, addDoc } from "firebase/firestore"; 
+  let formData = {
     /**
      * @type {string}
      */
-    let fName;
+     fName: '',
     /**
      * @type {string}
      */
-     let lName;
+     lName: '',
      /**
      * @type {string}
      */
-    let group;
+    group: '',
     /**
      * @type {string}
      */
-     let email;
+     email: '',
     /**
      * @type {string}
      */
-    let details;
-    function doPost(){
-        console.log(fName, lName, group, email, details);
+    details: '',
+  };
+    
+  const addDataToFirestore = async () => {
+    try {
+      const docRef = await addDoc(collection(db, "volunteers"), {
+        fName: formData.fName || "No first name provided",
+        lName: formData.lName || "No last name provided",
+        group: formData.group || "No group selected",
+        email: formData.email || "No email provided",
+        details: formData.details || "No details or comments",
+      });
+      alert("You have been added to the volunteer list!");
+      goto('/').then(
+        () => goto("/volunteer")
+      );
+    } catch (e) {
+      console.error("Error adding document: ", e);
     }
+  };
 </script>
 <div class="container">
-    <slot name="formTitle">
-    </slot>
-    <form action=""><!--/action_page.php-->
+    <h1>Volunteering with Eagles Volleyball</h1>
+    <form on:submit={addDataToFirestore}><!--/action_page.php-->
     <div class="row">
       <div class="col-25">
         <label for="fname">First Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." bind:value={fName}>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." bind:value={formData.fName}>
       </div>
     </div>
     <div class="row">
@@ -40,7 +59,7 @@
         <label for="lname">Last Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." bind:value={lName}>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." bind:value={formData.lName}>
       </div>
     </div>
     <div class="row">
@@ -48,7 +67,7 @@
           <label for="lname">Email</label>
         </div>
         <div class="col-75">
-          <input type="text" id="email" name="email" placeholder="Your email.." bind:value={email}>
+          <input type="text" id="email" name="email" placeholder="Your email.." bind:value={formData.email}>
         </div>
       </div>
     <div class="row">
@@ -56,7 +75,7 @@
         <label for="group">Group Preference</label>
       </div>
       <div class="col-75">
-        <select id="group" name="group" bind:value={group}>
+        <select id="group" name="group" bind:value={formData.group}>
           <option value="eaglets">Eaglets Youth</option>
           <option value="boys">Boys Team</option>
           <option value="visionaries">Girls Team Visionaries </option>
@@ -69,12 +88,12 @@
         <label for="subject">Questions/Comments</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Any questions or comments.." style="height:200px"  bind:value={details}></textarea>
+        <textarea id="subject" name="subject" placeholder="Any questions or comments.." style="height:200px"  bind:value={formData.details}></textarea>
       </div>
     </div>
     <br>
     <div class="row">
-      <button type="submit" value="Submit" on:click={doPost}>Share Volunteer Info with Eagles</button>
+      <button type="submit" value="Submit">Share Volunteer Info with Eagles</button>
     </div>
     </form>
   </div>
