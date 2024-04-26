@@ -1,12 +1,26 @@
 <script>
+	import db from "../firebaseconfig.js";
+	import { goto } from '$app/navigation';
+	import { collection, addDoc } from "firebase/firestore"; 
 	/**
      * @type {string}
      */
 	let email;
-	
-    function doPost(){
-        console.log("mailto: " + email);
+
+	const addDataToFirestore = async () => {
+    try {
+      const docRef = await addDoc(collection(db, "mailing_list"), {
+        email: email || "No email provided",
+      });
+      alert("You have been added to the mailing list!");
+	  email = "";
+      goto('/').then(
+        () => goto('/')
+      );
+    } catch (e) {
+      console.error("Error adding document: ", e);
     }
+  };
 </script>
 
 <svelte:head>
@@ -22,13 +36,13 @@
 	</div>
 	<h1>Sign up for our newsletter!</h1>
 	<div class="container">
-		<form>
+		<form on:submit={addDataToFirestore}>
 			<div class="row">
 				<div class="col-75">
 					<input type="text" id="email" name="email" placeholder="Enter your email.." bind:value={email}>
 				</div>
 				<div class="col-25">
-					<button class="butt" type="submit" value="Submit" on:click={doPost}>Subscribe</button>
+					<button class="butt" type="submit" value="Submit">Subscribe</button>
 				</div>
 			</div>
 		</form>

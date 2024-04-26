@@ -14,7 +14,5 @@
 	<p>
 		Please fill out the form below if you are interested in supporting the Eagles! Fly high!
 	</p>
-	<VolunteerForm>
-		<span slot="formTitle"><h1>Volunteering with Eagles Volleyball</h1></span>
-	</VolunteerForm>
+	<VolunteerForm></VolunteerForm>
 </div>
