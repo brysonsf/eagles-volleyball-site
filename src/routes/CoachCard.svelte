@@ -5,6 +5,11 @@
 		<slot name="name">
 			<span class="missing">Unknown name</span>
 		</slot>
+        <div class="email">
+            <slot name="email">
+                <span class="missing">Unknown email</span>
+            </slot>
+        </div>
         <div class="role">
             <slot name="role">
                 <span class="missing">Coach</span>
@@ -28,11 +33,7 @@
 		</slot>
 	</div>
 
-	<div class="email">
-		<slot name="email">
-			<span class="missing">Unknown email</span>
-		</slot>
-	</div>
+	
     <div class="picture">
         <slot name="picture">
         </slot>
@@ -48,6 +49,9 @@
         padding: 1em;
         overflow: hidden; /* Clearfix to contain floated elements */
 	}
+    .email{
+        float: right;
+    }
 
 	.details {
         float: left;
@@ -57,6 +61,11 @@
     .picture {
         float: right;
         width: 40%; /* Adjust as needed */
+    }
+    .button{
+        margin: 0 2em 2em 0;
+        position: relative;
+        float: inline-end;
     }
 
     h2 {
@@ -93,7 +102,7 @@
      /* mobile breakpoints */
 	@media (max-width: 600px) {
         .contact-card {
-            width: 450px;
-        }
+		    width: 300px;
+	    }
     }
 </style>

@@ -31,4 +31,13 @@
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
+	  /* mobile breakpoints */
+	  @media (max-width: 600px) {
+        main {
+		    width: 400px;
+	    }
+		.app {
+			width: 400px;
+		}
+    }
 </style>

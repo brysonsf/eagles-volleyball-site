@@ -64,6 +64,7 @@
 	<div class="col">
 		<CoachCard>
 			<span slot="name"><strong>Jasmine Chiasson</strong></span>
+			<!--<span slot="email"></span>-->
 			<span slot="button">
 				<button on:click={() => changePicture(Jasmine)}>Show/Hide Image</button>
 			</span>
@@ -77,7 +78,6 @@
 				</ul>
 			</span>
 			<span slot="hometown"> Caraquet, New Brunswick, Canada</span>
-			<!--<span slot="email"></span>-->
 			<span slot="picture"><img id={Jasmine} src={Jasmine} alt="Jasmine Pic" style="display:none;"></span>
 		</CoachCard>
 	</div>
@@ -106,13 +106,13 @@
 	<div class="col">
 		<CoachCard>
 			<span slot="name"><strong>Curtis Robarts</strong></span>
+			
+			<!--<span slot="email"></span>-->
 			<span slot="button">
 				<button on:click={() => changePicture(Curtis)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Boys Head Coach</strong></span>
-			<!--<span slot="details"> Certifications: Safe Sport. </span>
-			<span slot="hometown"></span>
-			<span slot="email"> brysonsf@gmail.com </span> -->
+			<span slot="details"> Certifications: Safe Sport. </span>
 			<span slot="picture"><img id={Curtis} src={Curtis} alt="Curtis Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
@@ -122,16 +122,18 @@
 	<div class="col">
 		<CoachCard>
 			<span slot="name"><strong>Sophie Surette</strong></span>
+			<!--<span slot="email"></span>-->
 			<span slot="role"><strong>Girls Head Coach - Team Apex</strong></span>
 			<!--<span slot="details"></span>
 			<span slot="hometown"></span>
-			<span slot="email"></span>
+			
 			<span slot="picture"><img src={Sophie} alt="Sophie Pic"></span>-->
 		</CoachCard>
 	</div>
 	<div class="col">
 		<CoachCard>
 			<span slot="name"><strong>Sarah van den Heuvel</strong></span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:sarahc.vdh@gmail.com" target="_blank" rel="noopener noreferrer">Contact Sarah</a></span>
 			<span slot="button">
 				<button on:click={() => changePicture(Sarah)}>Show/Hide Image</button>
 			</span>
@@ -145,7 +147,6 @@
 				</ul>
 			</span>
 			<span slot="hometown">Antigonish, NS</span>
-			<span slot="email"> <a class="anchorEmail" href="mailto:sarahc.vdh@gmail.com" target="_blank" rel="noopener noreferrer">Contact Sarah</a></span>
 			<span slot="picture"><img id={Sarah} src={Sarah} alt="Sarah Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
@@ -182,7 +183,7 @@
 			flex: 100%; /* Full width on small screens */
 		}
 		.row{
-			width: 500px;
+			width: 100%;
 			flex-wrap: wrap; /* Allow columns to wrap to the next line */
 		}
 	}
