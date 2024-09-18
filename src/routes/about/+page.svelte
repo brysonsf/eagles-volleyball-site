@@ -1,10 +1,18 @@
 <script>
 	import CoachCard from "../CoachCard.svelte";
-	import Jasmine from "$lib/images/jasmine.png";
 	import Emmy from "$lib/images/emmy.png";
-	import Sarah from "$lib/images/sarah.jpg";
 	import Bryson from "$lib/images/bryson.png";
 	import Curtis from "$lib/images/curtis.png";
+	import Gabe from "$lib/images/Temp.jfif"; // not here
+	import Ahmed from "$lib/images/601.jpg"; // not here
+	import Bre from "$lib/images/601.jpg"; // not here
+	import Maria from "$lib/images/601.jpg"; // not here
+	import Mady from "$lib/images/mady.jpg"; // not here
+	import Kwasi from "$lib/images/601.jpg"; // not here
+	import Fred from "$lib/images/601.jpg"; // not here
+	import Pierre from "$lib/images/601.jpg"; // not here
+
+
 	function changePicture(input){
 		if(document.getElementById(input)?.style["display"]==="none"){
 			document.getElementById(input).style["display"] = "flex";
@@ -46,6 +54,7 @@
 		</ul>
 	</div>
 </div>
+
 <h1>Eagles Coaching Staff</h1>
 <div class="row">
 	<div class="col">
@@ -63,22 +72,19 @@
 	</div>
 	<div class="col">
 		<CoachCard>
-			<span slot="name"><strong>Jasmine Chiasson</strong></span>
+			<span slot="name"><strong>Maria Rakka</strong></span>
 			<span slot="button">
-				<button on:click={() => changePicture(Jasmine)}>Show/Hide Image</button>
+				<button on:click={() => changePicture(Maria)}>Show/Hide Image</button>
 			</span>
-			<span slot="role"><strong>Technical Director</strong></span>
+			<span slot="role"><strong>Technical Director + Visionaries Head Coach</strong></span>
 			<span slot="details">
 				<ul>
-					<li>6 years of playing experience</li>
-					<li> 1 year with UMCS (home university team)</li>
-					<li>Former PLM high school volleyball coach</li>
-					<li>Certifications: Safe Sport</li>
+					<li>TBD</li>
 				</ul>
 			</span>
-			<span slot="hometown"> Caraquet, New Brunswick, Canada</span>
+			<span slot="hometown">Thessaloníki, Greece</span>
 			<!--<span slot="email"></span>-->
-			<span slot="picture"><img id={Jasmine} src={Jasmine} alt="Jasmine Pic" style="display:none;"></span>
+			<span slot="picture"><img id={Maria} src={Maria} alt="Maria Pic" style="display:none;"></span>
 		</CoachCard>
 	</div>
 </div>
@@ -109,10 +115,14 @@
 			<span slot="button">
 				<button on:click={() => changePicture(Curtis)}>Show/Hide Image</button>
 			</span>
-			<span slot="role"><strong>Boys Head Coach</strong></span>
-			<!--<span slot="details"> Certifications: Safe Sport. </span>
-			<span slot="hometown"></span>
-			<span slot="email"> brysonsf@gmail.com </span> -->
+			<span slot="role"><strong>Aguila Head Coach</strong></span>
+			<span slot="details">
+				<ul>
+					<li>TBD</li>
+				</ul>
+			</span>
+			<!--<span slot="hometown"></span>
+			<span slot="email"></span> -->
 			<span slot="picture"><img id={Curtis} src={Curtis} alt="Curtis Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
@@ -121,32 +131,110 @@
 <div class="row">
 	<div class="col">
 		<CoachCard>
-			<span slot="name"><strong>Sophie Surette</strong></span>
-			<span slot="role"><strong>Girls Head Coach - Team Apex</strong></span>
-			<!--<span slot="details"></span>
-			<span slot="hometown"></span>
-			<span slot="email"></span>
-			<span slot="picture"><img src={Sophie} alt="Sophie Pic"></span>-->
+			<span slot="name"><strong>Bre Peltier</strong></span>
+			<span slot="button">
+				<button class="button-51" on:click={() => changePicture(Emmy)}>Show/Hide Image</button>
+			</span>
+			<span slot="role"><strong>Assistant Coach</strong></span>
+			<span slot="details">
+				<ul>
+					<li>TBD</li>
+				</ul>
+			</span>
+			<!--<span slot="hometown"></span>
+			<span slot="email"></span>-->
+			<span slot="picture"><img src={Bre} alt="Bre Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
 	<div class="col">
 		<CoachCard>
-			<span slot="name"><strong>Sarah van den Heuvel</strong></span>
+			<span slot="name"><strong>Mady Thompson</strong></span>
 			<span slot="button">
-				<button on:click={() => changePicture(Sarah)}>Show/Hide Image</button>
+				<button on:click={() => changePicture(Mady)}>Show/Hide Image</button>
 			</span>
-			<span slot="role"><strong>Girls Head Coach - Team Visionaries</strong></span>
+			<span slot="role"><strong>Assistant Coach</strong></span>
 			<span slot="details">
 				<ul>
-					<li>Began playing volleyball in 2011, played for the Dal AC Rams in university</li>
-					<li>Head coach with Dartmouth Volleyball Club for two seasons</li>
-					<li>Will be an assistant coach with Team NS this summer</li>
-					<li>Certifications: Safe Sport & Foundations of Volleyball</li>
+					<li>TBD</li>
 				</ul>
 			</span>
-			<span slot="hometown">Antigonish, NS</span>
-			<span slot="email"> <a class="anchorEmail" href="mailto:sarahc.vdh@gmail.com" target="_blank" rel="noopener noreferrer">Contact Sarah</a></span>
-			<span slot="picture"><img id={Sarah} src={Sarah} alt="Sarah Pic" style="display: none;"></span>
+			<span slot="hometown">Hammonds Plains, NS</span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:email@e.mail" target="_blank" rel="noopener noreferrer">Contact Mady</a></span>
+			<span slot="picture"><img id={Mady} src={Mady} alt="Mady Pic" style="display: none;"></span>
+		</CoachCard>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col">
+		<CoachCard>
+			<span slot="name"><strong>Ahmed Sany</strong></span>
+			<span slot="button">
+				<button on:click={() => changePicture(Ahmed)}>Show/Hide Image</button>
+			</span>
+			<span slot="role"><strong>Assistant Coach</strong></span>
+			<span slot="details">
+				<ul>
+					<li>TBD</li>
+				</ul>
+			</span>
+			<!--<span slot="hometown"></span>
+			<span slot="email"></span>-->
+			<span slot="picture"><img src={Ahmed} alt="Ahmed Pic" style="display: none;"></span>
+		</CoachCard>
+	</div>
+	<div class="col">
+		<CoachCard>
+			<span slot="name"><strong>Gabriel Tomas</strong></span>
+			<span slot="button">
+				<button on:click={() => changePicture(Gabe)}>Show/Hide Image</button>
+			</span>
+			<span slot="role"><strong>Assistant Coach</strong></span>
+			<span slot="details">
+				<ul>
+					<li>TBD</li>
+				</ul>
+			</span>
+			<span slot="hometown">Halifax, NS</span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:email@e.mail" target="_blank" rel="noopener noreferrer">Contact Gabriel</a></span>
+			<span slot="picture"><img id={Gabe} src={Gabe} alt="Gabe Pic" style="display: none;"></span>
+		</CoachCard>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col">
+		<CoachCard>
+			<span slot="name"><strong>Kwasi Ankrah</strong></span>
+			<span slot="button">
+				<button on:click={() => changePicture(Kwasi)}>Show/Hide Image</button>
+			</span>
+			<span slot="role"><strong>Visionaries Head Coach</strong></span>
+			<span slot="details">
+				<ul>
+					<li>TBD</li>
+				</ul>
+			</span>
+			<!--<span slot="hometown"></span>
+			<span slot="email"></span>-->
+			<span slot="picture"><img src={Kwasi} alt="Kwasi Pic" style="display: none;"></span>
+		</CoachCard>
+	</div>
+	<div class="col">
+		<CoachCard>
+			<span slot="name"><strong>Pierre Umali</strong></span>
+			<span slot="button">
+				<button on:click={() => changePicture(Pierre)}>Show/Hide Image</button>
+			</span>
+			<span slot="role"><strong>Social Media Officer</strong></span>
+			<span slot="details">
+				<ul>
+					<li>TBD</li>
+				</ul>
+			</span>
+			<span slot="hometown">Halifax, NS</span>
+			<span slot="email"> <a class="anchorEmail" href="mailto:email@e.mail" target="_blank" rel="noopener noreferrer">Contact Pierre</a></span>
+			<span slot="picture"><img id={Pierre} src={Pierre} alt="Pierre Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
 </div>
