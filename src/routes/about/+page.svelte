@@ -13,6 +13,9 @@
 	import Pierre from "$lib/images/601.jpg"; // not here
 
 
+	/**
+     * @param {string} input
+     */
 	function changePicture(input){
 		if(document.getElementById(input)?.style["display"]==="none"){
 			document.getElementById(input).style["display"] = "flex";
