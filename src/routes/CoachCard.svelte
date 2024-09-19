@@ -93,7 +93,7 @@
      /* mobile breakpoints */
 	@media (max-width: 600px) {
         .contact-card {
-            width: 450px;
+            width: 300px;
         }
     }
 </style>

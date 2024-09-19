@@ -109,7 +109,7 @@
 			</span>
 			<span slot="hometown"> Toronto, Ontario, Canada </span>
 			<span slot="email"> <a class="anchorEmail" href="mailto:brysonsf@gmail.com" target="_blank" rel="noopener noreferrer">Contact Bryson</a></span>
-			<span slot="picture"><img class='resize' id={Bryson} src={Bryson} alt="Bryson Pic" style="width:250px; height: 650px; display:none;"></span>
+			<span slot="picture"><img class='resize' id={Bryson} src={Bryson} alt="Bryson Pic" style="display:none;"></span>
 		</CoachCard>
 	</div>
 	<div class="col">
@@ -136,7 +136,7 @@
 		<CoachCard>
 			<span slot="name"><strong>Bre Peltier</strong></span>
 			<span slot="button">
-				<button class="button-51" on:click={() => changePicture(Emmy)}>Show/Hide Image</button>
+				<button class="button-51" on:click={() => changePicture(Bre)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Assistant Coach</strong></span>
 			<span slot="details">
@@ -158,7 +158,9 @@
 			<span slot="role"><strong>Assistant Coach</strong></span>
 			<span slot="details">
 				<ul>
-					<li>TBD</li>
+					<li>15 years of playing both middle and left side.</li>
+					<li>Former assistant coach of Charles P. Allen high school team.</li>
+					<li>Certifications: Safe Sport, Foundations of Volleyball, Certified Personal Trainer, AED/First Aid Training, Anti-Racism Training, Cultural Sensitivity Training.</li>
 				</ul>
 			</span>
 			<span slot="hometown">Hammonds Plains, NS</span>

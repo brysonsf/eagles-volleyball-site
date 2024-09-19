@@ -14,9 +14,9 @@
 		font-weight: bold;
 	}
 
-	@media (min-width: 480px) {
+	@media (max-width: 600px) {
 		footer {
-			padding: 12px 0;
+			width: 400px;
 		}
 	}
 </style>
