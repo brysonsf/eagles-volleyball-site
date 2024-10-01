@@ -5,9 +5,9 @@
 	import Curtis from "$lib/images/curtis.png";
 	import Gabe from "$lib/images/Temp.jfif"; // not here
 	import Ahmed from "$lib/images/601.jpg"; // not here
-	import Bre from "$lib/images/601.jpg"; // not here
+	import Bre from "$lib/images/Bre.jfif";
 	import Maria from "$lib/images/601.jpg"; // not here
-	import Mady from "$lib/images/mady.jpg"; // not here
+	import Mady from "$lib/images/mady.jpg";
 	import Kwasi from "$lib/images/601.jpg"; // not here
 	import Fred from "$lib/images/601.jpg"; // not here
 	import Pierre from "$lib/images/601.jpg"; // not here
@@ -102,9 +102,9 @@
 			<span slot="role"><strong>Eaglets Head Coach</strong></span>
 			<span slot="details">
 				<ul>
-					<li>10-years playing experience. Trained as a middle. </li>
+					<li>10+ years playing experience. Trained as a middle.</li>
 					<li>Former Riverdale HS Volleyball Coach in Toronto</li>
-					<li>Certifications: Safe Sport</li>
+					<li>Certifications: Safe Sport, Anti-Racism in Coaching</li>
 				</ul>
 			</span>
 			<span slot="hometown"> Toronto, Ontario, Canada </span>
@@ -136,17 +136,19 @@
 		<CoachCard>
 			<span slot="name"><strong>Bre Peltier</strong></span>
 			<span slot="button">
-				<button class="button-51" on:click={() => changePicture(Bre)}>Show/Hide Image</button>
+				<button on:click={() => changePicture(Bre)}>Show/Hide Image</button>
 			</span>
 			<span slot="role"><strong>Assistant Coach</strong></span>
 			<span slot="details">
 				<ul>
-					<li>TBD</li>
+					<li>15+ years of playing experience as a middle</li>
+					<li>Student at Dalhousie University</li>
+					<li>Certifications: Safe Sport, Anti-Racism in Coaching</li>
 				</ul>
 			</span>
-			<!--<span slot="hometown"></span>
-			<span slot="email"></span>-->
-			<span slot="picture"><img src={Bre} alt="Bre Pic" style="display: none;"></span>
+			<span slot="hometown">Sudbury, Ontario, Canada</span>
+			<!--<span slot="email"></span>-->
+			<span slot="picture"><img id={Bre} src={Bre} alt="Bre Pic" style="display: none;"></span>
 		</CoachCard>
 	</div>
 	<div class="col">
