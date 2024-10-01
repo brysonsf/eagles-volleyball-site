@@ -1,30 +1,3 @@
-<script>
-	import CoachCard from "../CoachCard.svelte";
-	import Emmy from "$lib/images/emmy.png";
-	import Bryson from "$lib/images/bryson.png";
-	import Curtis from "$lib/images/curtis.png";
-	import Gabe from "$lib/images/Temp.jfif"; // not here
-	import Ahmed from "$lib/images/601.jpg"; // not here
-	import Bre from "$lib/images/Bre.jfif";
-	import Maria from "$lib/images/601.jpg"; // not here
-	import Mady from "$lib/images/mady.jpg";
-	import Kwasi from "$lib/images/601.jpg"; // not here
-	import Fred from "$lib/images/601.jpg"; // not here
-	import Pierre from "$lib/images/601.jpg"; // not here
-
-
-	/**
-     * @param {string} input
-     */
-	function changePicture(input){
-		if(document.getElementById(input)?.style["display"]==="none"){
-			document.getElementById(input).style["display"] = "flex";
-		}else{
-			document.getElementById(input).style["display"] = "none";
-		}
-		return null;
-	}
-</script>
 <svelte:head>
 	<title>All about the Eagles Org. It's mission, values, vision, and the coaches. </title>
 	<meta name="description" content="Eagles Volleyball Halifax - Core beliefs and about the coaches">
@@ -282,3 +255,30 @@
 		}
 	}
 </style>
+<script>
+	import CoachCard from "../CoachCard.svelte";
+	import Emmy from "$lib/images/emmy.png";
+	import Bryson from "$lib/images/bryson.png";
+	import Curtis from "$lib/images/curtis.png";
+	import Gabe from "$lib/images/Temp.jfif"; // not here
+	import Ahmed from "$lib/images/601.jpg"; // not here
+	import Bre from "$lib/images/Bre.jfif";
+	import Maria from "$lib/images/601.jpg"; // not here
+	import Mady from "$lib/images/mady.jpg";
+	import Kwasi from "$lib/images/601.jpg"; // not here
+	import Fred from "$lib/images/601.jpg"; // not here
+	import Pierre from "$lib/images/601.jpg"; // not here
+	/**
+     * @param {string} input
+     */
+	 function changePicture(input){
+		let hold = document.getElementById(input);
+		if(hold!=null){
+			if(hold.style["display"]==="none"){
+				hold.style["display"] = "flex";
+			}else{
+				hold.style["display"] = "none";
+			}
+		}
+	}
+</script>
